@@ -1,6 +1,6 @@
 ## Prerequisites ✅
 
-This project requires Flutter 3.18.3 or higher, and Dart 2.17.1 or higher.
+This project requires Flutter 3.19.3 or higher, and Dart 2.17.1 or higher.
 
 ---
 
