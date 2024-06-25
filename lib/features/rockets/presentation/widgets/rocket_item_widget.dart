@@ -4,7 +4,7 @@ import 'package:space_x/features/rockets/domain/entities/rocket.dart';
 /// {@template rocket_item}
 /// List item for a rocket
 /// {@endtemplate}
-class RocketItemWidget extends StatefulWidget {
+class RocketItemWidget extends StatelessWidget {
   /// {@macro rocket_item}
   const RocketItemWidget({
     super.key,
@@ -13,13 +13,6 @@ class RocketItemWidget extends StatefulWidget {
 
   /// The rocket to display
   final Rocket rocket;
-
-  @override
-  State<RocketItemWidget> createState() => _RocketItemWidgetState();
-}
-
-class _RocketItemWidgetState extends State<RocketItemWidget> {
-  Rocket get rocket => widget.rocket;
 
   @override
   Widget build(BuildContext context) {

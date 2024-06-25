@@ -18,8 +18,8 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  flutter: ^3.19.3
-  sdk: ">=2.17.1 <3.0.0"
+  flutter: ^3.22.0
+  sdk: ^3.4.0
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -37,23 +37,23 @@ dependencies:
   flutter_bloc: ^8.1.4
   flutter_localizations:
     sdk: flutter
-  freezed: ^2.4.7
+  freezed: ^2.5.2
   freezed_annotation: ^2.4.1
-  get_it: ^7.6.7
+  get_it: ^7.7.0
   get_storage: ^2.1.1
-  go_router: ^13.2.0
+  go_router: ^14.2.0
   google_fonts: ^6.2.1
   http_mock_adapter: ^0.6.1
-  injectable: ^2.3.2
-  intl: ^0.18.1
-  json_annotation: ^4.8.1
+  injectable: ^2.4.2
+  intl: any
+  json_annotation: ^4.9.0
 
 dev_dependencies:
-  bloc_test: ^9.1.6
-  build_runner: ^2.4.8
+  bloc_test: ^9.1.7
+  build_runner: ^2.4.11
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.1
+  flutter_lints: ^4.0.0
   injectable_generator: ^2.4.2
   json_serializable: ^6.7.1
   mocktail: ^1.0.3
@@ -68,4 +68,4 @@ flutter:
   uses-material-design: true
   generate: true
   assets:
-    - assets/
+    - google_fonts/

@@ -4,7 +4,7 @@ import 'package:space_x/features/ships/domain/entities/ship.dart';
 /// {@template ship_item}
 /// List item for a ship
 /// {@endtemplate}
-class ShipItemWidget extends StatefulWidget {
+class ShipItemWidget extends StatelessWidget {
   /// {@macro ship_item}
   const ShipItemWidget({
     super.key,
@@ -13,13 +13,6 @@ class ShipItemWidget extends StatefulWidget {
 
   /// The ship to display
   final Ship ship;
-
-  @override
-  State<ShipItemWidget> createState() => _ShipItemWidgetState();
-}
-
-class _ShipItemWidgetState extends State<ShipItemWidget> {
-  Ship get ship => widget.ship;
 
   @override
   Widget build(BuildContext context) {

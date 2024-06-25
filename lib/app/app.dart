@@ -48,6 +48,7 @@ class _SpaceXState extends State<SpaceX> {
       theme: buildTheme(ThemeData.light()),
       darkTheme: buildTheme(ThemeData.dark()),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
     );
   }
 }

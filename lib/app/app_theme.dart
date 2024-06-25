@@ -7,13 +7,14 @@ ThemeData buildTheme(ThemeData base) {
     colorScheme: base.colorScheme.copyWith(
       primary: primaryColor(base.brightness),
       secondary: secondaryColor,
-      background: surfaceColor(base.brightness),
       surface: surfaceColor(base.brightness),
       onSurface: textAccentColor(base.brightness),
       onPrimary: textAccentColor(base.brightness),
     ),
     scaffoldBackgroundColor: backgroundColor(base.brightness),
-    cardColor: surfaceColor(base.brightness),
+    cardTheme: base.cardTheme.copyWith(
+      color: cardColor(base.brightness),
+    ),
     appBarTheme: base.appBarTheme.copyWith(
       backgroundColor: kPrimaryColor,
       titleTextStyle: GoogleFonts.barlow(
@@ -21,7 +22,15 @@ ThemeData buildTheme(ThemeData base) {
         fontWeight: FontWeight.w700,
         color: textAccentColor(base.brightness),
       ),
+      systemOverlayStyle: SystemUiOverlayStyle(
+        systemNavigationBarColor: cardColor(base.brightness),
+        systemNavigationBarDividerColor: cardColor(base.brightness),
+        statusBarColor: Colors.transparent,
+      ),
       elevation: 0,
+    ),
+    bottomNavigationBarTheme: base.bottomNavigationBarTheme.copyWith(
+      backgroundColor: cardColor(base.brightness),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
