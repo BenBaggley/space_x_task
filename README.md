@@ -1,6 +1,8 @@
+This project uses the Space X api to display lists of rockets and ships
+
 ## Prerequisites ✅
 
-This project requires Flutter 3.19.3 or higher, and Dart 2.17.1 or higher.
+This project requires Flutter 3.22.0 or higher, and Dart 3.4.0 or higher.
 
 ---
 
